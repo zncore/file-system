@@ -4,7 +4,7 @@ namespace ZnCore\FileSystem\Helpers;
 
 use PATHINFO_EXTENSION;
 use Symfony\Component\Mime\MimeTypes;
-use ZnCore\Base\Arr\Helpers\ArrayHelper;
+use ZnCore\Arr\Helpers\ArrayHelper;
 
 class MimeTypeHelper
 {

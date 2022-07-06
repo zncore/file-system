@@ -2,7 +2,7 @@
 
 namespace ZnCore\FileSystem\Helpers;
 
-use ZnCore\Base\Arr\Helpers\ArrayHelper;
+use ZnCore\Arr\Helpers\ArrayHelper;
 use ZnCore\FileSystem\Entities\DirectoryEntity;
 use ZnCore\FileSystem\Entities\FileEntity;
 use ZnCore\Collection\Libs\Collection;
