@@ -9,6 +9,7 @@ namespace ZnCore\FileSystem\Helpers;
 
 use ErrorException;
 use ZnCore\Contract\Common\Exceptions\InvalidArgumentException;
+use ZnCore\Text\Helpers\StringHelper;
 
 /**
  * BaseFileHelper provides concrete implementation for [[FileHelper]].
