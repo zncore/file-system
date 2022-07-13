@@ -3,9 +3,9 @@
 namespace ZnCore\FileSystem\Helpers;
 
 use ZnCore\Arr\Helpers\ArrayHelper;
+use ZnCore\Collection\Libs\Collection;
 use ZnCore\FileSystem\Entities\DirectoryEntity;
 use ZnCore\FileSystem\Entities\FileEntity;
-use ZnCore\Collection\Libs\Collection;
 
 class FindFileHelper
 {
@@ -54,10 +54,10 @@ class FindFileHelper
         $list = self::scanDir($dir);
         foreach ($list as $name) {
             $path = $dir . '/' . $name;
-            if(is_dir($path)) {
+            if (is_dir($path)) {
                 $entity = new DirectoryEntity();
                 $entity->setItems(self::scanDirTree($path, $options));
-            } elseif(is_file($path)) {
+            } elseif (is_file($path)) {
                 $entity = new FileEntity();
                 $entity->setSize(filesize($path));
             } else {

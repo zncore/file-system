@@ -2,8 +2,6 @@
 
 namespace ZnCore\FileSystem\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileHelper;
-
 class FilePathHelper
 {
 

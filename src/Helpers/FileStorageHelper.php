@@ -2,18 +2,16 @@
 
 namespace ZnCore\FileSystem\Helpers;
 
-use ZnCore\FileSystem\Helpers\FileHelper;
-
 class FileStorageHelper
 {
 
     public static function isLocked(string $filename): bool
     {
-        if(!file_exists($filename)) {
+        if (!file_exists($filename)) {
             return false;
         }
         $fp = fopen($filename, 'r+');
-        if (!flock($fp, LOCK_EX|LOCK_NB, $wouldblock)) {
+        if (!flock($fp, LOCK_EX | LOCK_NB, $wouldblock)) {
             if ($wouldblock) {
                 // другой процесс удерживает блокировку
                 return true;
