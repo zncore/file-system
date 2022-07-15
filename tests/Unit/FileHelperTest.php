@@ -2,7 +2,7 @@
 
 namespace ZnCore\Base\Tests\Unit;
 
-use ZnDomain\Entity\Helpers\CollectionHelper;
+use ZnCore\Collection\Helpers\CollectionHelper;
 use ZnCore\FileSystem\Helpers\FindFileHelper;
 use ZnCore\FileSystem\Helpers\MimeTypeHelper;
 use ZnTool\Test\Asserts\DataAssert;
