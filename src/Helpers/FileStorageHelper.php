@@ -52,6 +52,7 @@ class FileStorageHelper
         $fileName = FileHelper::normalizePath($fileName);
         if (!file_exists($fileName)) {
             self::save($fileName, $data, $flags, $context, $dirAccess);
+            chmod($fileName, 0777);
         }
     }
 
